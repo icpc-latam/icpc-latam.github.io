@@ -989,7 +989,7 @@
     "team": "UNTreeCiclo",
     "solved": 6,
     "penalty": 597,
-    "teams": 56
+    "teams": 57
    },
    "South America/South": {
     "id": "teamsoar027",
@@ -999,7 +999,7 @@
     "team": "Corman",
     "solved": 8,
     "penalty": 1001,
-    "teams": 202,
+    "teams": 201,
     "photo": "img/teams/lar2025/teamsoar027.webp"
    }
   }

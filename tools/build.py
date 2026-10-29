@@ -366,13 +366,13 @@ WEBSITES = [
       ("Jamaica", []), ("Puerto Rico", []), ("Trinidad and Tobago", []), ("US Virgin Islands", [])]),
     ("South America/North", [("ICPC South America/North", "https://icpc.global/regionals/finder/South-America-North")],
      [("Colombia", [("Maratón Nacional de Programación ACIS/REDIS", "https://www.acis.org.co/maraton-nacional-2026")]),
-      ("Venezuela", [])]),
+      ("Ecuador", []), ("Venezuela", [])]),
     ("South America/South", [("ICPC South America/South", "https://icpc.global/regionals/finder/SouthAmerica-South")],
      [("Argentina", [("Torneo Argentino de Programación (TAP)", "https://aapc.org.ar/tap/"),
                      ("AAPC – Asociación Argentina de Programación Competitiva", "https://aapc.org.ar/")]),
       ("Bolivia", [("ICPC Bolivia – competitions and rankings", "https://icpcbolivia.org/competencias/")]),
       ("Chile", [("ICPC Chile", "https://icpc.cl/")]),
-      ("Ecuador", []), ("Paraguay", []), ("Peru", []), ("Uruguay", [])]),
+      ("Paraguay", []), ("Peru", []), ("Uruguay", [])]),
 ]
 
 

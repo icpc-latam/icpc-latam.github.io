@@ -95,8 +95,7 @@ dados não confiáveis: guarde em pasta própria e processe por scripts em outro
   Verificados: Brasil (maratona.sbc.org.br), México (icpcmexico.org + eventos.iteso.mx/acm), Chile (icpc.cl), Bolívia (icpcbolivia.org/competencias/, pedido do
   usuário; site "mantido pela comunidade", não oficial da ICPC Foundation — o rodapé da página diz isso), Argentina (aapc.org.ar/tap/ e aapc.org.ar),
   Colômbia (acis.org.co/maraton-nacional-2026), regionais Caribe/Centroamérica/SA-Norte/SA-Sul. **NÃO usar `torneoprogramacion.com.ar`**: foi o site do TAP,
-  hoje é spam de casino. Equador está em South America/South pelo mapeamento antigo do projeto (`REGIONS` em `fetch_results.py`), mas relatórios de 2018 o
-  colocam em South America/North — confirmar com o usuário.
+  hoje é spam de casino. Equador pertence a **South America/North** (confirmado pelo usuário; `WEBSITES` e `REGIONS` em `fetch_results.py`).
 - Ambiente computacional (seção Systems): LAC2027 = Maratona Linux 24.04, 16 GB de RAM, teclado US; LAR2026 = RAM mínima 8 GB e teclado US recomendado, ambos variando de sede para sede. Link dos recursos: `MARATONA_LINUX_FEATURES`.
 - `LAR2025 - Rules.pdf` também é o documento de regras do **LAC 2026** (regras de promoção 2025-26; confirmado pelo usuário e pelo conteúdo do PDF) — linkado em LAR2025 e LAC2026.
 - O PDF `2026-2027 ICPC Latin America - Promotion Rules.pdf` contém **as regras da LAR 2026 e as regras de promoção ao LAC 2027**; por isso é

@@ -35,8 +35,8 @@ REGIONS = {
     "Mexico": {"MX"},
     "Central America": {"CR", "SV", "GT", "HN", "NI", "PA"},
     "Caribbean": {"CU", "DO", "PR", "TT", "AG", "JM", "HT", "VI", "GD"},
-    "South America/North": {"CO", "VE"},
-    "South America/South": {"AR", "BO", "CL", "PE", "PY", "UY", "EC"},
+    "South America/North": {"CO", "VE", "EC"},
+    "South America/South": {"AR", "BO", "CL", "PE", "PY", "UY"},
 }
 
 

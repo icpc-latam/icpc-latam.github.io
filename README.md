@@ -53,7 +53,6 @@ no `tools/build.py`). Já tem Brasil, México, Chile, Bolívia, Argentina e Col�
 ### Pendências conhecidas
 - **Sites nacionais** sem link (TBA): Costa Rica, El Salvador, Guatemala, Nicaragua, Panamá, Antígua e Barbuda, Cuba, República Dominicana, Granada, Haiti,
   Jamaica, Porto Rico, Trinidad e Tobago, Ilhas Virgens (EUA), Venezuela, Equador, Paraguai, Peru e Uruguai. Peça ao usuário ou aos diretores regionais.
-  Confirmar também a região do Equador (Sul ou Norte).
 - **LAR 2026** (6–7 nov 2026; competição sáb. 7/nov, live no canal @MaratonaSBC): faltam times registrados, transmissões dos outros
   países e resultados (`TBA`/`TBD`). **LAC 2027** (13–17 jul 2027, Monterrey, México): faltam site oficial, times qualificados, resultados.
 - **Masters**: sem página para a edição #6 (fev/2025) nem para 2026.
