@@ -6,7 +6,7 @@ do ScoreLatam e da Maratona SBC. É HTML/CSS puro: basta enviar esta pasta para 
 (nginx, GitHub Pages, Netlify…). Nenhum build é necessário para publicar.
 
 **Hospedagem atual:** repositório https://github.com/icpc-latam/icpc-latam.github.io, publicado em https://icpc-latam.github.io/ (GitHub Pages,
-branch `main`, raiz). Para publicar: `python3 tools/build.py && git add -A && git commit && git push`. Domínio próprio ainda não configurado.
+branch `main`, raiz). Para publicar: `python3 tools/build.py && git add -A && git commit && git push`. Domínio próprio: https://www.icpclatam.org/ (arquivo `CNAME`; DNS na Cloudflare).
 
 As URLs espelham o site antigo: `/regionals/lar2025/`, `/championships/lac2026/`, `/masters/masters2024/`, …
 
@@ -61,7 +61,7 @@ no `tools/build.py`). Já tem Brasil, México, Chile, Bolívia, Argentina e Col�
 - Datas suspeitas herdadas do original (não alteradas): notícias WF46/47/48 na home ("April 19/20, 2024"; Astana foi em set/2024).
 - Numeração derivada: LAR2026 = edição #31, LAC2027 = edição #4. Notícia do MOJ datada "October 2026".
 - Dois PDFs têm ~28 MB (`PdA2024 - Teams stats.pdf`, `ICPC Latam stats until PdA2024.pdf`): alguns hosts têm limite (ex.: Cloudflare Pages 25 MiB).
-- URLs canônicas/sitemap assumem `https://www.icpclatam.org/` (`SITE_URL` em `build.py`).
+- URLs canônicas/sitemap usam `https://www.icpclatam.org/` (`SITE_URL` em `build.py`), que agora é o domínio real do site.
 
 ## O que foi feito (histórico)
 
