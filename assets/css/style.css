@@ -224,4 +224,3 @@ a.ev-thumb { flex: none; width: 104px; position: relative; z-index: 1; }
 a.ev-thumb img { width: 104px; height: 78px; object-fit: cover; border-radius: 8px; display: block; }
 a.card.test { border-color: var(--gold); background: var(--gold-soft); }
 
-.edit-link { font-size: 14px; font-weight: 400; margin-left: 10px; }

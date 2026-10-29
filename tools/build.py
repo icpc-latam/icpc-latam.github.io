@@ -373,9 +373,6 @@ def load_websites():
     return out
 
 
-REPO_EDIT = "https://github.com/icpc-latam/icpc-latam.github.io/edit/main/data/regions/"
-
-
 def websites_block(page):
     out = []
     for name, d in load_websites():
@@ -383,8 +380,7 @@ def websites_block(page):
         cards = "".join(
             stream_block(page, c["country"], [(w["label"], w["url"]) for w in c["websites"]] or [("National website: TBA", None)])
             for c in d["countries"])
-        edit = ext(f"{REPO_EDIT}{name}.json", "Edit this region", "edit-link")
-        out.append(f'<h3 id="{name}">{esc(d["region"])} {edit}</h3><p>Regional website: {sites}</p><div class="streams">{cards}</div>')
+        out.append(f'<h3 id="{name}">{esc(d["region"])}</h3><p>Regional website: {sites}</p><div class="streams">{cards}</div>')
     return "".join(out)
 
 

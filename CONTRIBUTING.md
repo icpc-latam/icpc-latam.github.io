@@ -14,7 +14,7 @@ You only edit **one small JSON file**; the page is rebuilt automatically after t
 | South America/South | [`data/regions/south-america-south.json`](data/regions/south-america-south.json) |
 
 ## Fastest way (no tools needed)
-1. Open your region's file above and click the pencil icon (**Edit this file**), or use the **Edit this region** link on the page.
+1. Open your region's file above and click the pencil icon (**Edit this file**).
 2. Make your change (see the format below) and click **Commit changes → Propose changes**. GitHub creates the pull request for you.
 3. A check validates the file (valid JSON, `https://` links, known country names). A maintainer reviews and merges.
 
