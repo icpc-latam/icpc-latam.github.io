@@ -1,0 +1,1007 @@
+{
+ "lac2024": {
+  "source": "https://scorelatam.naquadah.com.br/pda24/",
+  "teams": 40,
+  "promoted": 18,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr003",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "teambrbr002",
+    "solved": 8,
+    "penalty": 900,
+    "medal": "gold",
+    "tags": [
+     "🏆 Latin America Champion",
+     "🏆 Brazil Region Champion",
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr003.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teamsoar033",
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "InChaVoLa",
+    "solved": 8,
+    "penalty": 901,
+    "medal": "gold",
+    "tags": [
+     "🏆 South America South Region Champion",
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teamsoar033.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teambrbr014",
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "Eu ja tenho meu veredito, FAKE AC",
+    "solved": 8,
+    "penalty": 909,
+    "medal": "gold",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr014.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teambrbr013",
+    "cc": "BR",
+    "inst": "USP",
+    "team": "Codando & Coringando",
+    "solved": 8,
+    "penalty": 992,
+    "medal": "gold",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr013.webp"
+   },
+   {
+    "rank": 5,
+    "id": "teambrbr001",
+    "cc": "BR",
+    "inst": "UFRJ",
+    "team": "Todo mundo adora o Chris",
+    "solved": 6,
+    "penalty": 494,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr001.webp"
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr038",
+    "cc": "BR",
+    "inst": "USP/São Carlos",
+    "team": "que time é teu?",
+    "solved": 6,
+    "penalty": 665,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr038.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teambrbr030",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "imprima a resposta módulo whatsapp",
+    "solved": 6,
+    "penalty": 668,
+    "medal": "silver",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lac2024/teambrbr030.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teammxmx015",
+    "cc": "MX",
+    "inst": "UG-CIMAT",
+    "team": "OWO",
+    "solved": 6,
+    "penalty": 914,
+    "medal": "silver",
+    "tags": [
+     "🏆 Mexico Region Champion",
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teammxmx015.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teambrbr039",
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "AESTHETIC",
+    "solved": 5,
+    "penalty": 359,
+    "medal": "bronze",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lac2024/teambrbr039.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teambrbr025",
+    "cc": "BR",
+    "inst": "UFG",
+    "team": "Monkeys: Karasuno",
+    "solved": 5,
+    "penalty": 480,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teambrbr025.webp"
+   },
+   {
+    "rank": 11,
+    "id": "teamsocl016",
+    "cc": "CL",
+    "inst": "PUC",
+    "team": "Bella y Sensual",
+    "solved": 5,
+    "penalty": 488,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teamsocl016.webp"
+   },
+   {
+    "rank": 12,
+    "id": "teamsope010",
+    "cc": "PE",
+    "inst": "UNI-FC",
+    "team": "Rating is just a number",
+    "solved": 5,
+    "penalty": 499,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Kazakhstan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2024/teamsope010.webp"
+   }
+  ]
+ },
+ "lac2025": {
+  "source": "https://scorelatam.naquadah.com.br/pda25/",
+  "teams": 40,
+  "promoted": 18,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr009",
+    "cc": "BR",
+    "inst": "USP",
+    "team": "Faça o WM",
+    "solved": 9,
+    "penalty": 1660,
+    "medal": "gold",
+    "tags": [
+     "🏆 Latin America Champion",
+     "🏆 Brazil Region Champion",
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr009.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teambrbr015",
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "Paracuru, Eusébio e Pão de queijo. A vida é boa",
+    "solved": 8,
+    "penalty": 1175,
+    "medal": "gold",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr015.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teamsope037",
+    "cc": "PE",
+    "inst": "UNI-FC",
+    "team": "UnratedLegendaryGrandMasters",
+    "solved": 8,
+    "penalty": 1222,
+    "medal": "gold",
+    "tags": [
+     "🏆 South America South Region Champion",
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teamsope037.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teambrbr019",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "Torcida Pão de Alho™",
+    "solved": 7,
+    "penalty": 807,
+    "medal": "gold",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr019.webp"
+   },
+   {
+    "rank": 5,
+    "id": "teambrbr010",
+    "cc": "BR",
+    "inst": "UFAL",
+    "team": "Floyd (WA)rshall",
+    "solved": 7,
+    "penalty": 974,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr010.webp"
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr011",
+    "cc": "BR",
+    "inst": "IME",
+    "team": "i was jubilado for skipping a week of class",
+    "solved": 7,
+    "penalty": 1275,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr011.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teamsoar005",
+    "cc": "AR",
+    "inst": "UNR",
+    "team": "Red-Black Tree",
+    "solved": 6,
+    "penalty": 517,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teamsoar005.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teammxmx035",
+    "cc": "MX",
+    "inst": "UP Bonaterra",
+    "team": "UPgraded",
+    "solved": 6,
+    "penalty": 621,
+    "medal": "silver",
+    "tags": [
+     "🏆 Mexico Region Champion",
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teammxmx035.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teambrbr007",
+    "cc": "BR",
+    "inst": "UFCG",
+    "team": "CACHE OVERFLOW",
+    "solved": 6,
+    "penalty": 894,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr007.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teambrbr018",
+    "cc": "BR",
+    "inst": "UFPE",
+    "team": "tamo las4",
+    "solved": 5,
+    "penalty": 847,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teambrbr018.webp"
+   },
+   {
+    "rank": 11,
+    "id": "teamsoar002",
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "Corman et al.",
+    "solved": 5,
+    "penalty": 935,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teamsoar002.webp"
+   },
+   {
+    "rank": 12,
+    "id": "teamsobo006",
+    "cc": "BO",
+    "inst": "UMSS",
+    "team": "Perritos Malvados",
+    "solved": 5,
+    "penalty": 952,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Azerbaijan"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2025/teamsobo006.webp"
+   }
+  ]
+ },
+ "lac2026": {
+  "source": "https://scorelatam.naquadah.com.br/pda26/",
+  "teams": 41,
+  "promoted": 18,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr030",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "ooga booga",
+    "solved": 8,
+    "penalty": 786,
+    "medal": "gold",
+    "tags": [
+     "🏆 Latin America Champion",
+     "🏆 Brazil Region Champion",
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teambrbr030.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teammxmx040",
+    "cc": "MX",
+    "inst": "UP GDL",
+    "team": "Testigos de Germán",
+    "solved": 7,
+    "penalty": 703,
+    "medal": "gold",
+    "tags": [
+     "🏆 Mexico Region Champion",
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teammxmx040.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teamsoar012",
+    "cc": "AR",
+    "inst": "UNC",
+    "team": "Helicóptero",
+    "solved": 7,
+    "penalty": 748,
+    "medal": "gold",
+    "tags": [
+     "🏆 South America South Region Champion",
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamsoar012.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teamsocl037",
+    "cc": "CL",
+    "inst": "UChile",
+    "team": "sin globito no hay fiesta",
+    "solved": 7,
+    "penalty": 1202,
+    "medal": "gold",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamsocl037.webp"
+   },
+   {
+    "rank": 5,
+    "id": "teambrbr014",
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "É só fazer",
+    "solved": 6,
+    "penalty": 580,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teambrbr014.webp"
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr035",
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "Los Tralalelitos dizem FLAMENGOOO",
+    "solved": 6,
+    "penalty": 631,
+    "medal": "silver",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lac2026/teambrbr035.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teambrbr003",
+    "cc": "BR",
+    "inst": "UFCG",
+    "team": "8e6d0497880e3db3b3b093f517c13f9f",
+    "solved": 6,
+    "penalty": 738,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teambrbr003.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teamsoar022",
+    "cc": "AR",
+    "inst": "UBA",
+    "team": "Los Catastróficos",
+    "solved": 6,
+    "penalty": 774,
+    "medal": "silver",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamsoar022.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teamsope036",
+    "cc": "PE",
+    "inst": "UNI FIIS",
+    "team": "SaleEnOdeUno",
+    "solved": 6,
+    "penalty": 909,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamsope036.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teamsoar025",
+    "cc": "AR",
+    "inst": "UNR",
+    "team": "Red-Black Tree",
+    "solved": 6,
+    "penalty": 930,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamsoar025.webp"
+   },
+   {
+    "rank": 11,
+    "id": "teambrbr027",
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "Naim continua dentro de nós",
+    "solved": 6,
+    "penalty": 938,
+    "medal": "bronze",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teambrbr027.webp"
+   },
+   {
+    "rank": 12,
+    "id": "teamnoco034",
+    "cc": "CO",
+    "inst": "EAFIT",
+    "team": "Que bendición",
+    "solved": 6,
+    "penalty": 962,
+    "medal": "bronze",
+    "tags": [
+     "🏆 South America North Region Champion",
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teamnoco034.webp"
+   },
+   {
+    "rank": 13,
+    "id": "teammxmx018",
+    "cc": "MX",
+    "inst": "UP Bonaterra",
+    "team": "Igloo Zone",
+    "solved": 6,
+    "penalty": 999,
+    "medal": "",
+    "tags": [
+     "🎖️ Qualified for the World Finals in Dubai"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lac2026/teammxmx018.webp"
+   }
+  ]
+ },
+ "lar2024": {
+  "source": "https://scorelatam.naquadah.com.br/latam-2024/",
+  "teams": 490,
+  "promoted": 0,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr002",
+    "cc": "BR",
+    "inst": "USP",
+    "team": "Faça o WM",
+    "solved": 9,
+    "penalty": 1171,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teambrbr002.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teambrbr001",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "Torcida Pão de Alho™",
+    "solved": 8,
+    "penalty": 1184,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teambrbr001.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teamsoar039",
+    "cc": "AR",
+    "inst": "UNR",
+    "team": "Red-Black Tree",
+    "solved": 7,
+    "penalty": 709,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teamsoar039.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teamnoco001",
+    "cc": "CO",
+    "inst": "UNAL Bogotá",
+    "team": "UN pasito tUN tUN",
+    "solved": 7,
+    "penalty": 1089,
+    "medal": "",
+    "tags": [],
+    "promoted": false
+   },
+   {
+    "rank": 5,
+    "id": "teammxmx118",
+    "cc": "MX",
+    "inst": "ESCOM IPN",
+    "team": "Enchiladas con patas",
+    "solved": 6,
+    "penalty": 438,
+    "medal": "",
+    "tags": [],
+    "promoted": false
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr003",
+    "cc": "BR",
+    "inst": "UFCG",
+    "team": "CACHE OVERFLOW",
+    "solved": 6,
+    "penalty": 509,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teambrbr003.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teamsoar008",
+    "cc": "AR",
+    "inst": "ING UNLP",
+    "team": "NaN (Need a Name)",
+    "solved": 6,
+    "penalty": 718,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teamsoar008.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teamsoar043",
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "Corman et al.",
+    "solved": 6,
+    "penalty": 731,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teamsoar043.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teambrbr025",
+    "cc": "BR",
+    "inst": "IComp/UFAM",
+    "team": "Provado por AC",
+    "solved": 6,
+    "penalty": 750,
+    "medal": "",
+    "tags": [],
+    "promoted": false,
+    "photo": "img/teams/lar2024/teambrbr025.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teammxmx002",
+    "cc": "MX",
+    "inst": "ESCOM IPN",
+    "team": "No se nos ocurrio un nombre",
+    "solved": 6,
+    "penalty": 831,
+    "medal": "",
+    "tags": [],
+    "promoted": false
+   }
+  ],
+  "regions": {
+   "Brazil": {
+    "id": "teambrbr002",
+    "rank": 1,
+    "cc": "BR",
+    "inst": "USP",
+    "team": "Faça o WM",
+    "solved": 9,
+    "penalty": 1171,
+    "teams": 63,
+    "photo": "img/teams/lar2024/teambrbr002.webp"
+   },
+   "Mexico": {
+    "id": "teammxmx118",
+    "rank": 5,
+    "cc": "MX",
+    "inst": "ESCOM IPN",
+    "team": "Enchiladas con patas",
+    "solved": 6,
+    "penalty": 438,
+    "teams": 116
+   },
+   "Central America": {
+    "id": "teamcacr014",
+    "rank": 86,
+    "cc": "CR",
+    "inst": "ITCR-Alajuela",
+    "team": "Todo Es mental",
+    "solved": 4,
+    "penalty": 330,
+    "teams": 45,
+    "photo": "img/teams/lar2024/teamcacr014.webp"
+   },
+   "Caribbean": {
+    "id": "teamcbdr004",
+    "rank": 113,
+    "cc": "DO",
+    "inst": "INTEC",
+    "team": "#Pray4Mark",
+    "solved": 4,
+    "penalty": 457,
+    "teams": 23
+   },
+   "South America/North": {
+    "id": "teamnoco001",
+    "rank": 4,
+    "cc": "CO",
+    "inst": "UNAL Bogotá",
+    "team": "UN pasito tUN tUN",
+    "solved": 7,
+    "penalty": 1089,
+    "teams": 56
+   },
+   "South America/South": {
+    "id": "teamsoar039",
+    "rank": 3,
+    "cc": "AR",
+    "inst": "UNR",
+    "team": "Red-Black Tree",
+    "solved": 7,
+    "penalty": 709,
+    "teams": 187,
+    "photo": "img/teams/lar2024/teamsoar039.webp"
+   }
+  }
+ },
+ "lar2025": {
+  "source": "https://scorelatam.naquadah.com.br/latam-2025/",
+  "teams": 558,
+  "promoted": 44,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr054",
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "Naim continua dentro de nós",
+    "solved": 10,
+    "penalty": 1564,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr054.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teambrbr024",
+    "cc": "BR",
+    "inst": "UFCG",
+    "team": "8e6d0497880e3db3b3b093f517c13f9f",
+    "solved": 9,
+    "penalty": 1465,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr024.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teamsoar027",
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "Corman",
+    "solved": 8,
+    "penalty": 1001,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teamsoar027.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teamsoar056",
+    "cc": "AR",
+    "inst": "FAMAF - UNC",
+    "team": "Helicóptero",
+    "solved": 8,
+    "penalty": 1071,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teamsoar056.webp"
+   },
+   {
+    "rank": 5,
+    "id": "teambrbr030",
+    "cc": "BR",
+    "inst": "UFMG",
+    "team": "ooga booga",
+    "solved": 8,
+    "penalty": 1125,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr030.webp"
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr034",
+    "cc": "BR",
+    "inst": "UFPE",
+    "team": "las4s e pelados",
+    "solved": 7,
+    "penalty": 704,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr034.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teambrbr016",
+    "cc": "BR",
+    "inst": "UDESC",
+    "team": "é sempre o XOR",
+    "solved": 7,
+    "penalty": 710,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr016.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teambrbr050",
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "Los Tralalelitos dizem FLAMENGOOO",
+    "solved": 7,
+    "penalty": 762,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teambrbr050.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teamsoar015",
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "Los Catastróficos",
+    "solved": 7,
+    "penalty": 896,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teamsoar015.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teammxmx006",
+    "cc": "MX",
+    "inst": "Facultad de Ingenieria",
+    "team": ":)",
+    "solved": 7,
+    "penalty": 961,
+    "medal": "",
+    "tags": [
+     "🎖️"
+    ],
+    "promoted": true,
+    "photo": "img/teams/lar2025/teammxmx006.webp"
+   }
+  ],
+  "regions": {
+   "Brazil": {
+    "id": "teambrbr054",
+    "rank": 1,
+    "cc": "BR",
+    "inst": "UNICAMP",
+    "team": "Naim continua dentro de nós",
+    "solved": 10,
+    "penalty": 1564,
+    "teams": 66,
+    "photo": "img/teams/lar2025/teambrbr054.webp"
+   },
+   "Mexico": {
+    "id": "teammxmx006",
+    "rank": 10,
+    "cc": "MX",
+    "inst": "Facultad de Ingenieria",
+    "team": ":)",
+    "solved": 7,
+    "penalty": 961,
+    "teams": 133,
+    "photo": "img/teams/lar2025/teammxmx006.webp"
+   },
+   "Central America": {
+    "id": "teamcacr005",
+    "rank": 113,
+    "cc": "CR",
+    "inst": "ITCR-Alajuela",
+    "team": "No name yet",
+    "solved": 3,
+    "penalty": 186,
+    "teams": 51,
+    "photo": "img/teams/lar2025/teamcacr005.webp"
+   },
+   "Caribbean": {
+    "id": "teamcbcu001",
+    "rank": 33,
+    "cc": "CU",
+    "inst": "UH",
+    "team": "UH Pop",
+    "solved": 6,
+    "penalty": 781,
+    "teams": 50
+   },
+   "South America/North": {
+    "id": "teamnoco021",
+    "rank": 20,
+    "cc": "CO",
+    "inst": "UN-Med",
+    "team": "UNTreeCiclo",
+    "solved": 6,
+    "penalty": 597,
+    "teams": 56
+   },
+   "South America/South": {
+    "id": "teamsoar027",
+    "rank": 3,
+    "cc": "AR",
+    "inst": "UBA - FCEN",
+    "team": "Corman",
+    "solved": 8,
+    "penalty": 1001,
+    "teams": 202,
+    "photo": "img/teams/lar2025/teamsoar027.webp"
+   }
+  }
+ }
+}
