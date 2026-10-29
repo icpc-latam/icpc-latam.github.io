@@ -4,7 +4,10 @@ Instruções para o Claude Code nesta pasta. Leia também `README.md` (visão ge
 
 ## O que é este projeto
 Site estático do **ICPC Latin America** (www.icpclatam.org), reconstruído depois que o Google Sites original foi perdido.
-Não é um repositório git (não há `.git`). Destino de hospedagem ainda não definido — a pasta inteira é o site.
+A pasta inteira é o site e é um repositório git: **https://github.com/icpc-latam/icpc-latam.github.io** (público; branch `main`),
+publicado pelo GitHub Pages (fonte: `main`, raiz) em **https://icpc-latam.github.io/**. Fluxo: editar `tools/build.py` → `python3 tools/build.py` →
+`python3 tools/check_links.py` → `git add -A && git commit && git push`; o Pages republica sozinho em ~1 min. Os `index.html` gerados são versionados
+(o Pages serve direto da branch, sem build). `.nojekyll` desliga o Jekyll. Domínio próprio (www.icpclatam.org) ainda não configurado.
 
 - **Idioma**: converse com o usuário em **português**; o **conteúdo do site é em inglês** (alguns textos de fontes ficam em espanhol/português, como nomes de times).
 - **Vocabulário**: LAC = Latin American Championship = **PdA** (Programadores de América) · LAR = Latin American Regionals = **LATAM** no ScoreLatam ·
@@ -102,4 +105,4 @@ dados não confiáveis: guarde em pasta própria e processe por scripts em outro
 
 ## Pendências (ver README.md para a lista atualizada)
 LAR2026 e LAC2027 com campos `TBA`; sem páginas Masters 2025/2026; sem logos de patrocinadores;
-datas suspeitas de notícias WF46/47/48 na home; PDFs de ~28 MB; confirmar domínio em `SITE_URL`. Pergunte ao usuário antes de preencher qualquer um deles.
+datas suspeitas de notícias WF46/47/48 na home; PDFs de ~28 MB; confirmar domínio em `SITE_URL` (canonical/sitemap/robots apontam para www.icpclatam.org, não para icpc-latam.github.io). Pergunte ao usuário antes de preencher qualquer um deles.

@@ -5,6 +5,9 @@ foi reconstruído a partir das capturas do Wayback Machine (jan–jun 2026) e de
 do ScoreLatam e da Maratona SBC. É HTML/CSS puro: basta enviar esta pasta para qualquer hospedagem estática
 (nginx, GitHub Pages, Netlify…). Nenhum build é necessário para publicar.
 
+**Hospedagem atual:** repositório https://github.com/icpc-latam/icpc-latam.github.io, publicado em https://icpc-latam.github.io/ (GitHub Pages,
+branch `main`, raiz). Para publicar: `python3 tools/build.py && git add -A && git commit && git push`. Domínio próprio ainda não configurado.
+
 As URLs espelham o site antigo: `/regionals/lar2025/`, `/championships/lac2026/`, `/masters/masters2024/`, …
 
 > Vocabulário: **LAC** = Latin American Championship = **PdA** (Programadores de América) · **LAR** = Latin American
