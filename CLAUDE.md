@@ -92,12 +92,12 @@ dados não confiáveis: guarde em pasta própria e processe por scripts em outro
   `MARATONA_LINUX_WIKI`/`MARATONA_LINUX_TEST` em `build.py`). As páginas LAR2026 e LAC2027 têm seção "Systems" informando que os times podem **testar a imagem
   da competição** (guia: `.../wiki/How-to-Test-the-Competition-System` — imagem de treino com internet liberada; no dia da prova só os sistemas da prova).
   Para novas edições, reutilize `systems_block()`.
-- Sites regionais e nacionais: seção "Regional & National Websites" na página Regionals (`WEBSITES` + `websites_block()` em `build.py`; link na home
+- Sites regionais e nacionais: seção "Regional & National Websites" na página Regionals (dados em `data/regions/*.json`, `websites_block()` em `build.py`; link na home
   abaixo de "Our Regions"). Só entram links **abertos e conferidos** (out/2026); país sem site nacional achado mostra `National website: TBA`.
   Verificados: Brasil (maratona.sbc.org.br), México (icpcmexico.org + eventos.iteso.mx/acm), Chile (icpc.cl), Bolívia (icpcbolivia.org/competencias/, pedido do
   usuário; site "mantido pela comunidade", não oficial da ICPC Foundation — o rodapé da página diz isso), Argentina (aapc.org.ar/tap/ e aapc.org.ar),
   Colômbia (acis.org.co/maraton-nacional-2026), regionais Caribe/Centroamérica/SA-Norte/SA-Sul. **NÃO usar `torneoprogramacion.com.ar`**: foi o site do TAP,
-  hoje é spam de casino. Equador pertence a **South America/North** (confirmado pelo usuário; `WEBSITES` e `REGIONS` em `fetch_results.py`).
+  hoje é spam de casino. Equador pertence a **South America/North** (confirmado pelo usuário; `data/regions/south-america-north.json` e `REGIONS` em `fetch_results.py`).
 - Contribuição por PR: os links de sites regionais/nacionais ficam em `data/regions/<regiao>.json` (lidos por `load_websites()` no `build.py`, que valida
   https:// e nome do país em `CC`); `CONTRIBUTING.md` explica o fluxo. O workflow `.github/workflows/build.yml` valida em PRs e, no push para `main`,
   rebuilda, commita as páginas geradas (`[skip ci]`) e dispara o build do Pages. Para mudar a lista de regiões, edite `REGION_FILES` em `build.py`.
