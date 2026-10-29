@@ -1,0 +1,20 @@
+{
+  "region": "Mexico",
+  "websites": [
+    {
+      "label": "ITESO – ICPC Mexico Regional",
+      "url": "https://eventos.iteso.mx/acm/"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Mexico",
+      "websites": [
+        {
+          "label": "ICPC México",
+          "url": "https://www.icpcmexico.org/"
+        }
+      ]
+    }
+  ]
+}

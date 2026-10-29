@@ -1,0 +1,34 @@
+name: Build site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate data and build pages
+        run: |
+          python3 tools/build.py
+          python3 tools/check_links.py
+      - name: Commit regenerated pages (main only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Rebuild site from data [skip ci]"
+            git push
+            # pushes made with GITHUB_TOKEN do not start a Pages build by themselves
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds" >/dev/null
+          fi

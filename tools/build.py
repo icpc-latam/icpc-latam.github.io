@@ -354,36 +354,37 @@ def page_news_archive():
 
 # Regional and national websites, by sub-region. Only links that were opened and checked (Oct 2026) are listed;
 # a country without a link shows "TBA" until a national site is found. (region, regional sites, [(country, national sites)])
-WEBSITES = [
-    ("Brazil", [("Maratona SBC de Programação", "https://maratona.sbc.org.br/")],
-     [("Brazil", [("Maratona SBC de Programação", "https://maratona.sbc.org.br/")])]),
-    ("Mexico", [("ITESO – ICPC Mexico Regional", "https://eventos.iteso.mx/acm/")],
-     [("Mexico", [("ICPC México", "https://www.icpcmexico.org/")])]),
-    ("Central America", [("ICPC Centroamérica", "https://icpccentroamerica.org/")],
-     [("Costa Rica", []), ("El Salvador", []), ("Guatemala", []), ("Nicaragua", []), ("Panama", [])]),
-    ("Caribbean", [("ICPC Caribe", "https://www.icpccaribe.org/")],
-     [("Antigua and Barbuda", []), ("Cuba", []), ("Dominican Republic", []), ("Grenada", []), ("Haiti", []),
-      ("Jamaica", []), ("Puerto Rico", []), ("Trinidad and Tobago", []), ("US Virgin Islands", [])]),
-    ("South America/North", [("ICPC South America/North", "https://icpc.global/regionals/finder/South-America-North")],
-     [("Colombia", [("Maratón Nacional de Programación ACIS/REDIS", "https://www.acis.org.co/maraton-nacional-2026")]),
-      ("Ecuador", []), ("Venezuela", [])]),
-    ("South America/South", [("ICPC South America/South", "https://icpc.global/regionals/finder/SouthAmerica-South")],
-     [("Argentina", [("Torneo Argentino de Programación (TAP)", "https://aapc.org.ar/tap/"),
-                     ("AAPC – Asociación Argentina de Programación Competitiva", "https://aapc.org.ar/")]),
-      ("Bolivia", [("ICPC Bolivia – competitions and rankings", "https://icpcbolivia.org/competencias/")]),
-      ("Chile", [("ICPC Chile", "https://icpc.cl/")]),
-      ("Paraguay", []), ("Peru", []), ("Uruguay", [])]),
-]
+REGION_FILES = ['brazil', 'mexico', 'central-america', 'caribbean', 'south-america-north', 'south-america-south']  # data/regions/<name>.json, in page order
+
+
+def load_websites():
+    """Regional and national websites, one small JSON file per region (edited by pull requests; see CONTRIBUTING.md)."""
+    out = []
+    for name in REGION_FILES:
+        path = ROOT / "data/regions" / f"{name}.json"
+        d = json.loads(path.read_text(encoding="utf-8"))
+        for site in d["websites"] + [w for c in d["countries"] for w in c["websites"]]:
+            if not site.get("label") or not site.get("url", "").startswith("https://"):
+                raise SystemExit(f"{path}: every website needs a \"label\" and an https:// \"url\" (got {site})")
+        for c in d["countries"]:
+            if c["country"] not in CC:
+                raise SystemExit(f"{path}: unknown country {c['country']!r}; use one of: {', '.join(sorted(CC))}")
+        out.append((name, d))
+    return out
+
+
+REPO_EDIT = "https://github.com/icpc-latam/icpc-latam.github.io/edit/main/data/regions/"
 
 
 def websites_block(page):
     out = []
-    for region, regional, countries in WEBSITES:
-        sites = " &middot; ".join(ext(u, esc(t)) for t, u in regional)
+    for name, d in load_websites():
+        sites = " &middot; ".join(ext(w["url"], esc(w["label"])) for w in d["websites"])
         cards = "".join(
-            stream_block(page, c, [(t, u) for t, u in links] or [("National website: TBA", None)])
-            for c, links in countries)
-        out.append(f'<h3>{esc(region)}</h3><p>Regional website: {sites}</p><div class="streams">{cards}</div>')
+            stream_block(page, c["country"], [(w["label"], w["url"]) for w in c["websites"]] or [("National website: TBA", None)])
+            for c in d["countries"])
+        edit = ext(f"{REPO_EDIT}{name}.json", "Edit this region", "edit-link")
+        out.append(f'<h3 id="{name}">{esc(d["region"])} {edit}</h3><p>Regional website: {sites}</p><div class="streams">{cards}</div>')
     return "".join(out)
 
 
@@ -405,7 +406,9 @@ def page_regionals():
         + band("Regional & National Websites", "websites")
         + wrap("<p>Each of the six regionals has its own website, and some countries also run a national contest (and site) that "
                "selects the teams for the Regionals. Entries marked <span class=\"tba\">TBA</span> are national websites we have not "
-               f'found yet &ndash; <a href="{rel(p, "contact")}">contact us</a> if you know one.</p>'
+               f'found yet. Every region and country can fix or add its links with a pull request: see '
+               f'{ext("https://github.com/icpc-latam/icpc-latam.github.io/blob/main/CONTRIBUTING.md", "how to contribute")}, or '
+               f'<a href="{rel(p, "contact")}">contact us</a>.</p>'
                + websites_block(p)
                + '<p class="note">ICPC Bolivia is a community-maintained website, not an official site of the ICPC Foundation.</p>')
     )

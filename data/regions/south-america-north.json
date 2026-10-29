@@ -1,0 +1,28 @@
+{
+  "region": "South America/North",
+  "websites": [
+    {
+      "label": "ICPC South America/North",
+      "url": "https://icpc.global/regionals/finder/South-America-North"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Colombia",
+      "websites": [
+        {
+          "label": "Maratón Nacional de Programación ACIS/REDIS",
+          "url": "https://www.acis.org.co/maraton-nacional-2026"
+        }
+      ]
+    },
+    {
+      "country": "Ecuador",
+      "websites": []
+    },
+    {
+      "country": "Venezuela",
+      "websites": []
+    }
+  ]
+}

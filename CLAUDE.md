@@ -98,6 +98,9 @@ dados não confiáveis: guarde em pasta própria e processe por scripts em outro
   usuário; site "mantido pela comunidade", não oficial da ICPC Foundation — o rodapé da página diz isso), Argentina (aapc.org.ar/tap/ e aapc.org.ar),
   Colômbia (acis.org.co/maraton-nacional-2026), regionais Caribe/Centroamérica/SA-Norte/SA-Sul. **NÃO usar `torneoprogramacion.com.ar`**: foi o site do TAP,
   hoje é spam de casino. Equador pertence a **South America/North** (confirmado pelo usuário; `WEBSITES` e `REGIONS` em `fetch_results.py`).
+- Contribuição por PR: os links de sites regionais/nacionais ficam em `data/regions/<regiao>.json` (lidos por `load_websites()` no `build.py`, que valida
+  https:// e nome do país em `CC`); `CONTRIBUTING.md` explica o fluxo. O workflow `.github/workflows/build.yml` valida em PRs e, no push para `main`,
+  rebuilda, commita as páginas geradas (`[skip ci]`) e dispara o build do Pages. Para mudar a lista de regiões, edite `REGION_FILES` em `build.py`.
 - Ambiente computacional (seção Systems): LAC2027 = Maratona Linux 24.04, 16 GB de RAM, teclado US; LAR2026 = RAM mínima 8 GB e teclado US recomendado, ambos variando de sede para sede. Link dos recursos: `MARATONA_LINUX_FEATURES`.
 - `LAR2025 - Rules.pdf` também é o documento de regras do **LAC 2026** (regras de promoção 2025-26; confirmado pelo usuário e pelo conteúdo do PDF) — linkado em LAR2025 e LAC2026.
 - O PDF `2026-2027 ICPC Latin America - Promotion Rules.pdf` contém **as regras da LAR 2026 e as regras de promoção ao LAC 2027**; por isso é

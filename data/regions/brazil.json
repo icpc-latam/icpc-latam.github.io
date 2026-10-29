@@ -1,0 +1,20 @@
+{
+  "region": "Brazil",
+  "websites": [
+    {
+      "label": "Maratona SBC de Programação",
+      "url": "https://maratona.sbc.org.br/"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Brazil",
+      "websites": [
+        {
+          "label": "Maratona SBC de Programação",
+          "url": "https://maratona.sbc.org.br/"
+        }
+      ]
+    }
+  ]
+}

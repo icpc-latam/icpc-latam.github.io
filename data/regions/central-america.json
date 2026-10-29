@@ -1,0 +1,31 @@
+{
+  "region": "Central America",
+  "websites": [
+    {
+      "label": "ICPC Centroamérica",
+      "url": "https://icpccentroamerica.org/"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Costa Rica",
+      "websites": []
+    },
+    {
+      "country": "El Salvador",
+      "websites": []
+    },
+    {
+      "country": "Guatemala",
+      "websites": []
+    },
+    {
+      "country": "Nicaragua",
+      "websites": []
+    },
+    {
+      "country": "Panama",
+      "websites": []
+    }
+  ]
+}

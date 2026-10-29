@@ -1,0 +1,54 @@
+{
+  "region": "South America/South",
+  "websites": [
+    {
+      "label": "ICPC South America/South",
+      "url": "https://icpc.global/regionals/finder/SouthAmerica-South"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Argentina",
+      "websites": [
+        {
+          "label": "Torneo Argentino de Programación (TAP)",
+          "url": "https://aapc.org.ar/tap/"
+        },
+        {
+          "label": "AAPC – Asociación Argentina de Programación Competitiva",
+          "url": "https://aapc.org.ar/"
+        }
+      ]
+    },
+    {
+      "country": "Bolivia",
+      "websites": [
+        {
+          "label": "ICPC Bolivia – competitions and rankings",
+          "url": "https://icpcbolivia.org/competencias/"
+        }
+      ]
+    },
+    {
+      "country": "Chile",
+      "websites": [
+        {
+          "label": "ICPC Chile",
+          "url": "https://icpc.cl/"
+        }
+      ]
+    },
+    {
+      "country": "Paraguay",
+      "websites": []
+    },
+    {
+      "country": "Peru",
+      "websites": []
+    },
+    {
+      "country": "Uruguay",
+      "websites": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "region": "Caribbean",
+  "websites": [
+    {
+      "label": "ICPC Caribe",
+      "url": "https://www.icpccaribe.org/"
+    }
+  ],
+  "countries": [
+    {
+      "country": "Antigua and Barbuda",
+      "websites": []
+    },
+    {
+      "country": "Cuba",
+      "websites": []
+    },
+    {
+      "country": "Dominican Republic",
+      "websites": []
+    },
+    {
+      "country": "Grenada",
+      "websites": []
+    },
+    {
+      "country": "Haiti",
+      "websites": []
+    },
+    {
+      "country": "Jamaica",
+      "websites": []
+    },
+    {
+      "country": "Puerto Rico",
+      "websites": []
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "websites": []
+    },
+    {
+      "country": "US Virgin Islands",
+      "websites": []
+    }
+  ]
+}
