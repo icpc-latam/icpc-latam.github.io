@@ -462,8 +462,9 @@ def page_lar2026():
     yt_ = lambda x: f"https://www.youtube.com/watch?v={x}"
     live = lambda x: f"https://www.youtube.com/live/{x}"
     streams = "".join([
-        '<div class="stream"><h4>Summary</h4><ul>'
-        f'<li>{ext(yt_("gwUt0IuTULE"), "Resumo da Primeira Expedição")}</li></ul></div>',
+        '<div class="stream"><h4>First Expedition</h4><ul>'
+        f'<li>{ext(yt_("gwUt0IuTULE"), "Resumo da Primeira Expedição")}</li></ul>'
+        '<p class="note">A side project: a trip from Brasília to the competition site, giving talks along the way.</p></div>',
         stream_block(p, "Brasil", [("Live streaming", live("IFpk6yJvqUE"))], "https://www.youtube.com/@MaratonaSBC/", "Brazil"),
         stream_block(p, "Caribe", [("Live streaming", yt_("isb73Y8Lklo"))], None, "Dominican Republic"),
         stream_block(p, "América Central", [("Live streaming", live("0whsGRck5Fc"))], None, "Costa Rica"),
