@@ -1003,5 +1003,209 @@
     "photo": "img/teams/lar2025/teamsoar027.webp"
    }
   }
+ },
+ "lar2026": {
+  "source": "https://scorelatam.naquadah.com.br/latam-2026/",
+  "teams": 528,
+  "promoted": 83,
+  "top": [
+   {
+    "rank": 1,
+    "id": "teambrbr021",
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "Flamengokart 8 Deluxe",
+    "solved": 11,
+    "penalty": 907,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr021.webp"
+   },
+   {
+    "rank": 2,
+    "id": "teamsoar040",
+    "cc": "AR",
+    "inst": "UNC",
+    "team": "Helicóptero",
+    "solved": 11,
+    "penalty": 1225,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teamsoar040.webp"
+   },
+   {
+    "rank": 3,
+    "id": "teambrbr063",
+    "cc": "BR",
+    "inst": "USP São Carlos",
+    "team": "Apenas caqui em Mogi das Cruzes - SP",
+    "solved": 11,
+    "penalty": 1395,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr063.webp"
+   },
+   {
+    "rank": 4,
+    "id": "teamsoar011",
+    "cc": "AR",
+    "inst": "UNR",
+    "team": "para la pda",
+    "solved": 11,
+    "penalty": 1476,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teamsoar011.webp"
+   },
+   {
+    "rank": 5,
+    "id": "teammxmx001",
+    "cc": "MX",
+    "inst": "ESCOM IPN",
+    "team": "Domain Expansion \"Abraham échate un hint\"",
+    "solved": 10,
+    "penalty": 896,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teammxmx001.webp"
+   },
+   {
+    "rank": 6,
+    "id": "teambrbr047",
+    "cc": "BR",
+    "inst": "UF Santa Catarina",
+    "team": "3 macacos infinitos com heurística",
+    "solved": 10,
+    "penalty": 944,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr047.webp"
+   },
+   {
+    "rank": 7,
+    "id": "teambrbr019",
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "Abri a caixa e meu gato virou um WA",
+    "solved": 10,
+    "penalty": 966,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr019.webp"
+   },
+   {
+    "rank": 8,
+    "id": "teambrbr032",
+    "cc": "BR",
+    "inst": "UFPE",
+    "team": "Shadow, o ouriço-cacheiro-viajante",
+    "solved": 10,
+    "penalty": 1007,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr032.webp"
+   },
+   {
+    "rank": 9,
+    "id": "teambrbr065",
+    "cc": "BR",
+    "inst": "USP",
+    "team": "Em minha defesa, ainda tava tentando resolver o warm-up",
+    "solved": 10,
+    "penalty": 1036,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr065.webp"
+   },
+   {
+    "rank": 10,
+    "id": "teambrbr001",
+    "cc": "BR",
+    "inst": "UFU",
+    "team": "Praise the Sonic",
+    "solved": 10,
+    "penalty": 1175,
+    "medal": "",
+    "tags": [],
+    "promoted": true,
+    "photo": "img/teams/lar2026/teambrbr001.webp"
+   }
+  ],
+  "regions": {
+   "Brazil": {
+    "id": "teambrbr021",
+    "rank": 1,
+    "cc": "BR",
+    "inst": "UnB",
+    "team": "Flamengokart 8 Deluxe",
+    "solved": 11,
+    "penalty": 907,
+    "teams": 65,
+    "photo": "img/teams/lar2026/teambrbr021.webp"
+   },
+   "Mexico": {
+    "id": "teammxmx001",
+    "rank": 5,
+    "cc": "MX",
+    "inst": "ESCOM IPN",
+    "team": "Domain Expansion \"Abraham échate un hint\"",
+    "solved": 10,
+    "penalty": 896,
+    "teams": 77,
+    "photo": "img/teams/lar2026/teammxmx001.webp"
+   },
+   "Central America": {
+    "id": "teamcacr001",
+    "rank": 84,
+    "cc": "CR",
+    "inst": "TEC Alajuela",
+    "team": "quién me robó los chicharrones???",
+    "solved": 6,
+    "penalty": 582,
+    "teams": 56,
+    "photo": "img/teams/lar2026/teamcacr001.webp"
+   },
+   "Caribbean": {
+    "id": "teamcbcu001",
+    "rank": 45,
+    "cc": "CU",
+    "inst": "UH",
+    "team": "UH Pop",
+    "solved": 8,
+    "penalty": 1007,
+    "teams": 37,
+    "photo": "img/teams/lar2026/teamcbcu001.webp"
+   },
+   "South America/North": {
+    "id": "teamnoco019",
+    "rank": 18,
+    "cc": "CO",
+    "inst": "UNAL Medellin",
+    "team": "UNTreeCiclo",
+    "solved": 9,
+    "penalty": 798,
+    "teams": 79
+   },
+   "South America/South": {
+    "id": "teamsoar040",
+    "rank": 2,
+    "cc": "AR",
+    "inst": "UNC",
+    "team": "Helicóptero",
+    "solved": 11,
+    "penalty": 1225,
+    "teams": 214,
+    "photo": "img/teams/lar2026/teamsoar040.webp"
+   }
+  }
  }
 }

@@ -28,6 +28,7 @@ EDITIONS = {
     "lac2026": ("pda26", 13),
     "lar2024": ("latam-2024", 10),
     "lar2025": ("latam-2025", 10),
+    "lar2026": ("latam-2026", 10),
 }
 
 REGIONS = {
@@ -45,7 +46,7 @@ def clean(s):
 
 
 def photo_url(folder, cell_html):
-    m = re.search(r"href=['\"]([^'\"]*photos/[^'\"]+)['\"]", cell_html)
+    m = re.search(r"href=['\"]([^'\"]*(?:photos|fotos)/[^'\"]+)['\"]", cell_html)   # "fotos/" in the MOJ report (2026+)
     return urljoin(f"{BASE}{folder}/", m.group(1)) if m else ""
 
 
@@ -75,7 +76,39 @@ def fetch(folder):
     return urllib.request.urlopen(req, timeout=120).read().decode("utf-8", "replace")
 
 
+def parse_moj(page, folder):
+    """Scoreboard published by MOJ (LAR 2026 onwards): one <tr data-login=...> per team, guest (CCL) rows have no place."""
+    rows = []
+    for m in re.finditer(r"<tr[^>]*data-login=\"([^\"]+)\"[^>]*>(.*?)</tr>", page, re.S):
+        body = m.group(2)
+        place = re.search(r'<td class="place">\s*(\d+)\s*</td>', body)
+        team = re.search(r'<td class="team"[^>]*>(.*?)</td>', body, re.S)
+        tot = re.search(r'<td class="cell tot"><b>(\d+)</b>', body)
+        pen = re.search(r'<td class="cell pen"><span class="pv">(\d+)</span>', body)
+        cc = re.search(r'data-country="([^"]+)"', m.group(0))
+        if not (place and team and tot and cc):      # CCL (guest) teams are not ranked
+            continue
+        label = clean(re.split(r'<a class="tphoto"|<span class="qual-chip"|<span class="pill"', team.group(1))[0])
+        inst = re.match(r"\[([^\]]+)\]\s*(.*)", label)
+        rows.append({
+            "rank": int(place.group(1)),
+            "id": m.group(1).strip(),
+            "photo_url": photo_url(folder, body) if 'class="tphoto"' in body else "",
+            "cc": cc.group(1).upper(),
+            "inst": inst.group(1) if inst else "",
+            "team": (inst.group(2) if inst else label).strip(),
+            "solved": int(tot.group(1)),
+            "penalty": int(pen.group(1)) if pen else 0,
+            "medal": "",
+            "tags": [],
+            "promoted": 'class="qual-chip"' in body,
+        })
+    return rows
+
+
 def parse(page, folder):
+    if "data-login=" in page:
+        return parse_moj(page, folder)
     rows = []
     for m in re.finditer(r'<tr class="sitegroup(\d+)"[^>]*>(.*?)</tr>', page, re.S):
         if m.group(1) != "1":          # overall scoreboard only

@@ -38,7 +38,7 @@ python3 -m http.server 8765      # pré-visualizar em http://localhost:8765/
 | Logos de patrocinadores | colocar `assets/img/sponsors/{jetbrains,huawei,icpc-foundation}.{svg,png}` (são usados automaticamente) |
 | PDFs | colocar em `assets/docs/` e usar `pdf(page, "arquivo.pdf", "rótulo")` |
 
-## Estado atual (14/out/2026)
+## Estado atual (10/nov/2026)
 
 Páginas: Home, News (Archive), Regionals (LAR2026, LAR2025, LAR2024, LARs1996-2023), Championships (LAC2027, LAC2026,
 LAC2025, LAC2024), Masters (2019–2024), Training, History, Contact. Resultados completos de LAC2024-2026 e LAR2024-2025;
@@ -53,8 +53,8 @@ no `tools/build.py`). Já tem Brasil, México, Chile, Bolívia, Argentina e Col�
 ### Pendências conhecidas
 - **Sites nacionais** sem link (TBA): Costa Rica, El Salvador, Guatemala, Nicaragua, Panamá, Antígua e Barbuda, Cuba, República Dominicana, Granada, Haiti,
   Jamaica, Porto Rico, Trinidad e Tobago, Ilhas Virgens (EUA), Venezuela, Equador, Paraguai, Peru e Uruguai. Peça ao usuário ou aos diretores regionais.
-- **LAR 2026** (6–7 nov 2026; competição sáb. 7/nov, live no canal @MaratonaSBC): faltam times registrados, transmissões dos outros
-  países e resultados (`TBA`/`TBD`). **LAC 2027** (13–17 jul 2027, Monterrey, México): faltam site oficial, times qualificados, resultados.
+- **LAR 2026** (6–7 nov 2026) já tem resultados, vídeos (Brasil, Caribe, América Central, Cuba, resumo) e PDFs; faltam transmissões de México, Chile, Argentina etc.
+  e o relatório da Maratona SBC. **LAC 2027** (13–17 jul 2027, Monterrey, México): faltam site oficial, times qualificados, resultados.
 - **Masters**: sem página para a edição #6 (fev/2025) nem para 2026.
 - **Não recuperável** do arquivo (imagens do Google Sites nunca foram arquivadas): logos de patrocinadores, fotos de notícias,
   pódios dos Masters, fotos de contato, logos de camps de treinamento. Hoje: bandeiras (flagcdn.com, PNG local), iniciais/medalhas/cartões.

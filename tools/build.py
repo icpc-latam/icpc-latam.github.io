@@ -25,7 +25,7 @@ SCORELATAM = "https://scorelatam.naquadah.com.br/"
 MARATONA_HIST = "https://maratona.sbc.org.br/hist/index.html"
 
 # ---------------------------------------------------------------- site data --
-BANNER = ("The upcoming ICPC Latin America Regionals 2026 - November 7, 2026", "regionals/lar2026", "Click here")
+BANNER = ("The upcoming ICPC Latin America Championship 2027 - July 13-17, 2027, Monterrey, Mexico", "championships/lac2027", "Click here")
 
 NAV = [
     ("Home", "home", []),
@@ -260,6 +260,10 @@ def page_home(path=""):
     wf46 = "https://zibada.guru/finals/2022/"
     wf47 = "https://zibada.guru/finals/2023/"
     news_cards = "".join([
+        news("November 7, 2026", "&ldquo;Flamengokart 8 Deluxe&rdquo; team, from UnB - Universidade de Brasília, ranked first at the "
+             f'ICPC Latin America Regionals 2026 with 11 problems solved among {RESULTS["lar2026"]["teams"]} teams&hellip;',
+             f'<img class="pic" src="{asset(p, RESULTS["lar2026"]["top"][0]["photo"])}" alt="UnB team Flamengokart 8 Deluxe, winner of the Regionals 2026" loading="lazy">',
+             "regionals/lar2026"),
         news("October 2026", "<strong>MOJ</strong> (Melhor Online Judge) is the new contest management system of ICPC Latin America. "
              "Visit moj.naquadah.com.br&hellip;", "", "https://moj.naquadah.com.br/", "Visit MOJ"),
         news("March 2026", "&ldquo;ooga booga&rdquo; team, from UFMG - Universidade Federal de Minas Gerais, got Latin America Champion "
@@ -301,18 +305,16 @@ def page_home(path=""):
                f'<p class="more-link"><a href="{rel(p, "regionals")}#websites">Websites of all regions and countries &hellip;</a></p>')
         + band("Upcoming Events")
         + wrap('<div class="event-cards">'
-               + event_card(rel(p, "regionals/lar2026"), "November 6-7, 2026", "ICPC Latin American Regionals 2026 (LAR)",
-                            "Contest on Saturday, November 7th &middot; live on the Maratona SBC channel")
                + event_card(rel(p, "championships/lac2027"), "July 13-17, 2027", "ICPC Latin American Championship 2027 (LAC)",
                             "Monterrey, Mexico &middot; 80 teams")
                + "</div>")
         + band("Latest Events")
         + wrap('<div class="event-cards">'
+               + event_card(rel(p, "regionals/lar2026"), "November 7, 2026", "ICPC Latin American Regionals 2026 &ndash; results",
+                            f'Winner: UnB (Brazil) &ndash; {RESULTS["lar2026"]["teams"]} ranked teams', thumb(p, RESULTS["lar2026"]["top"][0], "ev-thumb"), True)
                + event_card(rel(p, "championships/lac2026"), "March 4-8, 2026 &middot; Santiago, Chile",
                             "ICPC Latin American Championship 2026 &ndash; results",
                             "Champion: UFMG (Brazil) &ndash; &ldquo;ooga booga&rdquo;", thumb(p, RESULTS["lac2026"]["top"][0], "ev-thumb"), True)
-               + event_card(rel(p, "regionals/lar2025"), "November 8, 2025", "ICPC Latin American Regionals 2025 &ndash; results",
-                            "Winner: UNICAMP (Brazil) &ndash; 558 teams", thumb(p, RESULTS["lar2025"]["top"][0], "ev-thumb"), True)
                + "</div>")
         + band("Our News")
         + wrap(f'<div class="news-grid">{news_cards}</div>'
@@ -431,7 +433,7 @@ def teams_links(slug_suffix, year_label, last, finder_kind="teams"):
     return regs
 
 
-def systems_block(page, moj_text="", ram="", keyboard=""):
+def systems_block(page, moj_text="", ram="", keyboard="", test=True):
     """Contest systems + invitation to test the competition image (Maratona Linux wiki)."""
     cards = ""
     if moj_text:
@@ -441,10 +443,12 @@ def systems_block(page, moj_text="", ram="", keyboard=""):
               '<span>Official operating system for the contest computers</span></a>'
               f'<a class="card" href="{MARATONA_LINUX_FEATURES}" target="_blank" rel="noopener"><strong>Maratona Linux 24.04 features</strong>'
               '<span>Tools, editors and resources available in the contest system</span></a>'
-              f'<a class="card test" href="{MARATONA_LINUX_TEST}" target="_blank" rel="noopener"><strong>Test the competition system</strong>'
-              '<span>Step-by-step guide: download the practice image, write the USB drive and boot it</span></a>')
+              + (f'<a class="card test" href="{MARATONA_LINUX_TEST}" target="_blank" rel="noopener"><strong>Test the competition system</strong>'
+                 '<span>Step-by-step guide: download the practice image, write the USB drive and boot it</span></a>' if test else ""))
     env = facts([("Operating system", f'{ext(MARATONA_LINUX_FEATURES, "Maratona Linux 24.04")} (official contest system)'),
                  ("Memory (RAM)", ram), ("Keyboard layout", keyboard)])
+    if not test:
+        return f'<h3>Computing environment</h3>{env}<div class="cards">{cards}</div>'
     return (f'<h3>Computing environment</h3>{env}<div class="cards">{cards}</div>'
             '<p><strong>Teams can test the image that will be used in the contest.</strong> The practice image boots the same '
             'environment as the contest (Maratona Linux, from a USB drive), with one difference: it has free access to the internet, '
@@ -455,23 +459,46 @@ def systems_block(page, moj_text="", ram="", keyboard=""):
 
 def page_lar2026():
     p = Page("regionals/lar2026", "LAR2026", "icpc.latam->regionals(LAR2026)", "")
-    live = stream_block(p, "Brasil", [("Live on the Maratona SBC channel", "https://www.youtube.com/@MaratonaSBC/")],
-                        "https://www.youtube.com/@MaratonaSBC/", "Brazil")
+    yt_ = lambda x: f"https://www.youtube.com/watch?v={x}"
+    live = lambda x: f"https://www.youtube.com/live/{x}"
+    streams = "".join([
+        '<div class="stream"><h4>Summary</h4><ul>'
+        f'<li>{ext(yt_("gwUt0IuTULE"), "Resumo da Primeira Expedição")}</li></ul></div>',
+        stream_block(p, "Brasil", [("Live streaming", live("IFpk6yJvqUE"))], "https://www.youtube.com/@MaratonaSBC/", "Brazil"),
+        stream_block(p, "Caribe", [("Live streaming", yt_("isb73Y8Lklo"))], None, "Dominican Republic"),
+        stream_block(p, "América Central", [("Live streaming", live("0whsGRck5Fc"))], None, "Costa Rica"),
+        stream_block(p, "Cuba", [("Clausura sede cubana", live("SYCSOwruwL4"))]),
+    ])
+    r = RESULTS["lar2026"]
     p.body = (
-        intro("The 2026 ICPC Latin America Regionals will be held on <strong>November 6-7, 2026</strong>; "
-              "the contest is on <strong>Saturday November 7th, 2026</strong>")
+        intro("The 2026 ICPC Latin America Regionals was held on <strong>November 6-7, 2026</strong>; "
+              "the contest was on <strong>Saturday November 7th, 2026</strong>")
         + anchors([("rules", "Official Rules"), ("systems", "Systems"), ("teams", "Registered Teams"),
                    ("streams", "Streamings"), ("results", "Results")])
         + band("Official Rules", "rules")
         + wrap(pdf(p, RULES_2026_27, RULES_2026_27_LABEL)
-               + "<p>The contest is distributed across the six regions, on the same date and time, with the same problem set. "
+               + "<p>The contest was distributed across the six regions, on the same date and time, with the same problem set. "
                  "Results are aggregated at three levels: super-region, region and country. The best teams are promoted to the "
                  f'<a href="{rel(p, "championships/lac2027")}">2027 ICPC Latin America Championship</a> in Monterrey, Mexico.</p>')
-        + band("Systems", "systems") + wrap(systems_block(p, "Judging is centralized through MOJ", "At least 8 GB; varies from site to site",
-                                                                       "US layout recommended; may vary from site to site"))
-        + band("Registered Teams", "teams") + wrap('<p class="tba">TBA&hellip;</p>')
-        + band("Streamings", "streams") + wrap(f'<div class="streams">{live}</div><p class="tba">Other regions: TBA&hellip;</p>')
-        + band("Results", "results") + wrap('<p class="tba">TBD&hellip;</p>')
+        + band("Systems", "systems")
+        + wrap(systems_block(p, "Judging is centralized through MOJ", "At least 8 GB; varies from site to site",
+                             "US layout recommended; may vary from site to site", test=False)
+               + pdf(p, "LAR2026 - info_sheet.pdf"))
+        + band("Registered Teams", "teams")
+        + wrap(f'<p>The official scoreboard lists {r["teams"] + 35} teams: {r["teams"]} in the official ranking and 35 guest (CCL) teams. '
+               f'{ext(r["source"], "Scoreboard and contest report at ScoreLatam")}.</p>')
+        + band("Streamings", "streams") + wrap(f'<div class="streams">{streams}</div>')
+        + band("Results", "results")
+        + wrap(facts([("Teams in the official ranking", str(r["teams"])), ("Problems", "13"), ("Submissions", "6195"),
+                      ("Marked as qualified for the Latin American Championship",
+                       f'{r["promoted"]} (including 9 reserve slots; the committee may still adjust the list)')])
+               + winner_block(p, "lar2026", "UnB &ndash; Flamengokart 8 Deluxe",
+                              ["&#129351; Global winner of the Regionals", "&#127894;&#65039; Promoted to the Latin American Championship"])
+               + "<h3>Global top 10</h3>" + results_table(p, "lar2026")
+               + "<h3>Best team of each region</h3>" + region_table(p, "lar2026")
+               + "<h3>Contest documents</h3>" + pdf(p, "LAR2026 - Problem set.pdf") + pdf(p, "LAR2026 - Time limits.pdf")
+               + '<p class="src">Source: ' + ext(r["source"], "ScoreLatam") + " (MOJ contest report; teams promoted to the Championship: "
+               + ext(r["source"] + "classificados.html", "Qualified tab") + ").</p>")
     )
     return p
 
@@ -623,7 +650,10 @@ def page_lac2027():
                  "Under the standard criteria 42 teams qualify (40 base slots plus 2 all-female slots); the hosts provide 38 additional slots. "
                  "In total, <strong>80 teams</strong> will qualify for the 2027 Championship.</p>")
         + band("Systems", "systems") + wrap(systems_block(p, "Judging is centralized through MOJ", "16 GB", "US layout"))
-        + band("Qualified Teams", "teams") + wrap('<p class="tba">TBA&hellip;</p>')
+        + band("Qualified Teams", "teams")
+        + wrap('<p>Teams marked as qualified at the 2026 Regionals: '
+               + ext(RESULTS["lar2026"]["source"] + "classificados.html", "Qualified tab of the LAR 2026 report (ScoreLatam)")
+               + '.</p><p class="tba">Final list: TBA&hellip;</p>')
         + band("Official Results", "results") + wrap('<p class="tba">TBD&hellip;</p>')
     )
     return p

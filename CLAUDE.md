@@ -57,7 +57,9 @@ Sempre confira visualmente páginas alteradas (largura 1280 e ~390 para celular)
 - Datas das listas de "Editions" incluem a chegada dos líderes (ex.: LAC2024 lista 13–18/mar, a página diz 14–18) — é o padrão original, não é erro.
 
 ## Fontes de dados e armadilhas
-**ScoreLatam** (https://scorelatam.naquadah.com.br/): `pda24|pda25|pda26` = LAC; `latam-2024|latam-2025` = LAR. Em `fetch_results.py`:
+**ScoreLatam** (https://scorelatam.naquadah.com.br/): `pda24|pda25|pda26` = LAC; `latam-2024|latam-2025|latam-2026` = LAR. O placar de `latam-2026` já é o
+relatório do **MOJ** (HTML diferente do BOCA: `<tr data-login=...>`, fotos em `fotos/`, aba `classificados.html`); `parse_moj()` em `fetch_results.py` cuida disso.
+LAR2026: 563 linhas = 528 times oficiais + 35 convidados (CCL, sem posição); 83 times marcados como classificados (inclui 9 vagas reserva; o comitê pode ajustar). Em `fetch_results.py`:
 - cada time aparece várias vezes (um `<tr class="sitegroupN">` por filtro); `group 1` = ranking geral; grupo de CCL é ignorado;
 - o regex da linha precisa aceitar atributos extras (`<tr class="sitegroup1" color=yellow>` — a linha do 2º colocado do LAC2024 tinha isso);
 - o nome do time pode vir com `</br>` malformado; o `id` do time tinha espaço no fim (`.strip()`);
@@ -108,5 +110,5 @@ dados não confiáveis: guarde em pasta própria e processe por scripts em outro
 - Typos do original corrigidos (Maters, Agentina, Openning, judgding, Azerbaiyán); datas e demais textos do original foram mantidos.
 
 ## Pendências (ver README.md para a lista atualizada)
-LAR2026 e LAC2027 com campos `TBA`; sem páginas Masters 2025/2026; sem logos de patrocinadores;
+LAC2027 com campos `TBA` (site oficial, times classificados finais, resultados); LAR2026 já tem resultados (nov/2026), sem relatório da Maratona SBC ainda; sem páginas Masters 2025/2026; sem logos de patrocinadores;
 datas suspeitas de notícias WF46/47/48 na home; PDFs de ~28 MB; confirmar HTTPS forçado do domínio (ver topo). Pergunte ao usuário antes de preencher qualquer um deles.
